@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://cxf.apache.org/jaxrs
+        http://cxf.apache.org/schemas/jaxrs.xsd">
+
+
+    <bean id="personPublicApi" class="com.firstproject.phonebook.RESTApi.PersonPublicApi"/>
+    <bean id="phoneBookPublicApi" class="com.firstproject.phonebook.RESTApi.PhoneBookPublicApi"/>
+    <bean id="jacksonJaxbJsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider"/>
+
+    <jaxrs:server id="restApi" address="/">
+        <jaxrs:serviceBeans>
+            <ref bean="personPublicApi"/>
+            <ref bean="phoneBookPublicApi"/>
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <ref bean="jacksonJaxbJsonProvider"/>
+        </jaxrs:providers>
+    </jaxrs:server>
+
+
+</beans>
+
+

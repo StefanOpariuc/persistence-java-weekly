@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<dataset>
+    <phone_book
+            ph_id="1"
+            prefix="0233"
+            city_name='vaslui'
+    />
+    <phone_book
+            ph_id="2"
+            prefix="0232"
+            city_name='Iasi'
+    />
+    <phone_book
+            ph_id="3"
+            prefix="0231"
+            city_name='Bucuresti'
+    />
+
+    <person
+            pr_id="1"
+            age='20'
+            first_name='Stefan'
+            last_name="Opariuc"
+            telephone_number='0232777888'
+            phonebookid="2"
+    />
+    <person
+            pr_id="2"
+            age='21'
+            first_name='Stefan1'
+            last_name="Opariuc1"
+            telephone_number='0232111222'
+            phonebookid="2"
+    />
+    <person
+            pr_id="3"
+            age='22'
+            first_name='Stefan2'
+            last_name="Opariuc2"
+            telephone_number='0231333555'
+            phonebookid="3"
+    />
+</dataset>
