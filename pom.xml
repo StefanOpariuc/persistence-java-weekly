@@ -308,7 +308,11 @@
             <artifactId>powermock-api-mockito</artifactId>
             <version>${powermock.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.10</version>
+        </dependency>
     </dependencies>
 
 

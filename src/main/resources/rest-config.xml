@@ -9,12 +9,14 @@
 
     <bean id="personPublicApi" class="com.firstproject.phonebook.RESTApi.PersonPublicApi"/>
     <bean id="phoneBookPublicApi" class="com.firstproject.phonebook.RESTApi.PhoneBookPublicApi"/>
+    <bean id="carApi" class="com.firstproject.persistence.example.tabelperclass.api.CarApi"/>
     <bean id="jacksonJaxbJsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider"/>
 
     <jaxrs:server id="restApi" address="/">
         <jaxrs:serviceBeans>
             <ref bean="personPublicApi"/>
             <ref bean="phoneBookPublicApi"/>
+            <ref bean="carApi"/>
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <ref bean="jacksonJaxbJsonProvider"/>

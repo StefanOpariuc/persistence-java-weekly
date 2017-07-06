@@ -19,6 +19,7 @@ public class FlyingCar extends Car {
         this.wing = wing;
     }
 
+
     public String getWing() {
         return this.wing;
     }

@@ -36,5 +36,21 @@ public abstract class Car {
 
     public Car() {
     }
+
+    public Long getId() {
+        return this.id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getEngine() {
+        return this.engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
 }
 
