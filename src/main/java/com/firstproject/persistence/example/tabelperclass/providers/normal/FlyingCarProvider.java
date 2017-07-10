@@ -13,7 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
  **/
 @Component
 @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
-@Transactional(rollbackFor = Exception.class)public class FlyingCarProvider implements CarProvider {
+@Transactional(rollbackFor = Exception.class)
+public class FlyingCarProvider implements CarProvider {
 
     private final String carType = "FlyingCar";
 
